@@ -1,14 +1,70 @@
-# Basic Sample Hardhat Project
+# NFT MarketPlace using ERC1155
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+an NFT marketplace is your gateway to participating in the purchase and sale of these digital assets
 
-Try running some of the following tasks:
+## Environment Variables
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
+To run this project, you will need to add the following environment variables to your .env file
+
 ```
+    RINKEBY_API_URL = "https://eth-rinkeby.alchemyapi.io/v2/YOUR_API_KEY"
+    PRIVATE_KEY = "YOUR-METAMASK-PRIVATE_KEY"
+    ETHERSCAN_API_KEY = "YOUR-ETHERSCAN_API_KEY"
+```
+
+## NPM Packages:
+
+ - [Openzeppelin](https://docs.openzeppelin.com/contracts/4.x/erc1155)
+ - [Hardhat Ethers](https://www.npmjs.com/package/hardhat-ethers)
+ - [Chai](https://www.npmjs.com/package/chai)
+ - [Ethers](https://www.npmjs.com/package/ethers)
+ - [ethereum-waffle](https://www.npmjs.com/package/ethereum-waffle)
+ - [dotenv](https://www.npmjs.com/package/dotenv)
+ - [Hardhat-Etherscan](https://www.npmjs.com/package/hardhat-etherscan)
+
+## Tech Stack:
+ - [Node](https://nodejs.org/en/)
+ - [Hardhat](https://hardhat.org/tutorial/)
+ - [Solidity](https://docs.soliditylang.org/en/v0.8.13)
+
+ 
+## Run Locally:
+
+Clone the github repo:
+```
+https://github.com/Udeshyakr/NFTMarketPlace1155.git
+```
+
+Install Node Modules
+```
+npm install
+```
+
+Compile
+```
+npx hardhat compile
+```
+
+Test
+```
+npx hardhat test
+```
+
+Deploy
+```
+node scripts/deploy.js
+```
+
+Deploy on Rinkey
+```
+npx hardhat run scripts/deploy.js --network rinkeby
+```
+Help
+```
+npx hardhat help
+```
+
+## Check at Rinkeby Testnet:
+ - [SilverToken](https://rinkeby.etherscan.io/address/0xBFF768b7E7E99B152C33ea42c95E965a8e1C45e4)
+ - [NFTMarketPlace](https://rinkeby.etherscan.io/address/0x9aECF5fC534359D72fC2A45B40e487df9bb12Bd2)
+ 
