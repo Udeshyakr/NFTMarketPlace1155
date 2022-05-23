@@ -39,6 +39,19 @@ Install Node Modules
 ```
 npm install
 ```
+```
+npm install --save-dev hardhat
+```
+
+```
+npx hardhat
+```
+## Plugins:
+ @dev- After installing hardhat, Most of the time the way to use a given tool is by consuming a plugin that integrates it into Hardhat.
+ we are going to use the Ethers.js and Waffle plugins
+ ```
+ npm install --save-dev @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-waffle ethereum-waffle chai
+ ```
 
 Compile
 ```
